@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(/src/img/istockphoto-1238076090-612x612.jpg);
+    background-size: cover;
+    background-position: center center; 
+    background-repeat: no-repeat; 
+  }
+  .container {
+    text-align: center;
+    border: 2px solid #ccc;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #c21b1b;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 300px;
+  }
+  input[type="text"],input[type="password"],button {
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family:'Croissant One', sans-serif; 
+  }
+  button {
+    background-color: #0c0b0b;
+    color: red;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+}    
+button:hover {
+    box-shadow: 0px 0px 10px 3px rgba(215, 223, 215, 0.7);
+    transform: scale(1); /* Увеличиваем размер в два раза */
+    background-color: #4c4c4c; 
+    color: white;
+}
+  p {
+    margin-top: 20px;
+    font-weight: bold;
+    font-family:'Croissant One', sans-serif; 
+  }

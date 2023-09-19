@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+button {
+  font-size: 24px;
+  background-color: green;
+  padding: 30px;
+  border: 2px solid white;
+  border-radius: 5%;
+  color: white;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: background-color 0.5s, box-shadow 0.5s; // Добавляем переходы для цвета фона и тени
+  
+  &:hover {
+    background-color: darken(green, 10%);
+    box-shadow: 0px 0px 20px rgba(0, 255, 0, 0.5); // Добавляем свечение при наведении
+  }
+  
+  &:active {
+    background-color: red;
+    box-shadow: none; // Убираем тень при клике
+  }
+}
